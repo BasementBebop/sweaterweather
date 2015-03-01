@@ -12,4 +12,9 @@ $(document).ready(function() {
     });
   }
   getWeather();
+
+  $('form').submit(function (evt) {
+    evt.preventDefault();
+    getWeather();
+  })
 });
