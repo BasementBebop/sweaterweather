@@ -3,28 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Sweater Weather</title>
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.11.2.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <h1>Sweater Weather</h1>
-          <br>
-          <h4>There is a <spam id="precip"></spam>% chance of rain in Portland, OR</h4>
-          <h4>It's <spam id="temp"></spam> degrees out there dawg.</h4>
+      <button class="btn visible">M</button>
+      <button class="btn bb visible">BASEMENT x BEBOP</button>
+        <div class="side-nav">
+
+          <!-- Side-nav HTML -->
+
         </div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col-md-8">
+
+        <h1 id="main-header">Sweater Weather</h1>
+
+        <div class="content">
+          <p>There is a <spam id="precip"></spam>% chance of rain in Portland, OR</p>
+          <p>It's <spam id="temp"></spam> degrees out there dawg.</p>
           <form>
-            <button type="submit" id="submit" class="btn btn-primary">But what about now?</button>
+            <button type="submit" id="submit" class="refresh-btn btn">But what about now?</button>
           </form>
         </div>
-      </div>
+        <div id="side-nav-mask"></div>
+
     </div>
+
   </body>
 </html>
