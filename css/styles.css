@@ -10,10 +10,6 @@ html{
   margin-left: 30%;
 }
 
-h1 {
-  font-family: 'Lato', 'sans-serif';
-}
-
 #main-header {
   margin-left: 30%;
 }
@@ -42,9 +38,37 @@ h1 {
   height: 100%;
   width: 100%;
   background:#92d6d8;
-  z-index: 4;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  opacity: .4;
+}
+
+.side-nav {
+  visibility: hidden;
+  position: fixed;
+  height: 100%;
+  width: 25%;
+  background:#92d6d8;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  color:#f1f4f1;
+}
+
+.side-nav-content {
+  margin: 10px;
 }
 
 .visible{
   visibility: visible;
+}
+
+form {
+  display: block;
+  color:#455642;
+}
+
+form p {
+  color:#f1f4f1;
 }

@@ -10,12 +10,20 @@
   </head>
   <body>
     <div class="container">
-      <button class="btn menu-reveal visible">M</button>
+      <button class="btn menu-reveal visible">O</button>
       <button class="btn bb visible">BASEMENT x BEBOP</button>
         <div class="side-nav">
-
-          <!-- Side-nav HTML -->
-
+          <div class="side-nav-content">
+            <h2>OPTIONS</h2>
+            <form id="refresh-location">
+              <p>Latitude:</p>
+              <input type="text" name="lati" id="lati" placeholder="45.5200">
+              <p>Longitude:</p>
+              <input type="text" name="longi" id="longi" placeholder="-122.6819">
+              <p></p>
+              <button class="btn refresh-btn" type="submit">Let's See It!</button>
+            </form>
+          </div>
         </div>
 
         <h1 id="main-header">Sweater Weather</h1>
@@ -23,11 +31,11 @@
         <div class="content">
           <p>There is a <spam id="precip"></spam>% chance of rain in Portland, OR</p>
           <p>It's <spam id="temp"></spam> degrees out there dawg.</p>
-          <form>
+          <form id="refresh-weather">
             <button type="submit" id="submit" class="refresh-btn btn visible">But what about now?</button>
           </form>
         </div>
-        <div class="side-nav-mask">Visible</div>
+        <div class="side-nav-mask"></div>
 
     </div>
 
