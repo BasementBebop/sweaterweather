@@ -25,6 +25,7 @@ h1 {
   padding: 15px;
   border: none;
   display: inline-block;
+  visibility: hidden;
 }
 
 .bb {
@@ -35,12 +36,15 @@ h1 {
 
 }
 
-#side-nav-mask {
-  display: none;
+.side-nav-mask {
+  visibility: hidden;
+  position: fixed;
   height: 100%;
   width: 100%;
+  background:#92d6d8;
+  z-index: 4;
+}
 
-  &.visible{
-    display: fixed;
-  }
+.visible{
+  visibility: visible;
 }
